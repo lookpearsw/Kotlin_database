@@ -34,7 +34,6 @@
 
             <TextView
                 android:id="@+id/textview"
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin"
@@ -75,6 +74,7 @@
 
         <Button
             android:id="@+id/clear_button"
+            android:onClick="@{() -> sleepTrackerViewModel.onClear()}"
             style="@style/SleepButtons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
